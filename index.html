@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gender Comparaison</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.3/d3-tip.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<header>
+				<h1>Men & Women</h1>
+				<h2>Do they have the same job concerns?</h2>
+			</header>
+			<div class="project-description">
+				<p>We choose to work with the data from Unionen. The dataset is a summary of calls from the members of Unionen, listing the subject of their calls, their work profile, gender and location. For our project, we choose to work with the genders and calls subject data. We wanted to see if women and men calls for the same concerns or not.</p>
+			</div>
+
+			<div class="graph-wrapper">
+				<div class="graph-title">
+					<p><span>How </span><span id="comparaison"></span><span> are they?</span></p>
+				</div>
+				<div class="prespective">
+					<button class="graph-button" id="similar">Change Perspective</button> <!--perspective change-->
+					<div class="graph-description"><p>Distribution of genders per each call category in percentages</p></div>
+				</div>
+				<div class="view-wrapper">
+			
+					<!---->	
+					<div class="right-view">
+						<div class="button-legend-wrapper"><!--legend-->
+							<div class="graph-legend-wrapper">									
+								<img class="legend-icon" src="img/Circledark.png" alt="Men"><p class="legend-title">calls from men</p>
+							</div>
+							<div class="graph-legend-wrapper">									
+								<img class="legend-icon" src="img/Circlelight.png" alt="Women"><p class="legend-title">calls from women</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="left-view">
+						<div class="graph-container"><!--graph-->
+							<div id="graph"></div>
+						</div>
+						<div class="figures-container"><!--figures-->
+							<div class="dark"><img src="img/persondark.png"/></div>
+							<div id="separator"></div>
+							<div class="light"><img src="img/personlight.png"/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<p> A <a href="https://www.hyperisland.com/" target="_blank">Hyper Island</a> project by <a href="http://johannanorberg.com/" target="_blank" target="_blank">Johanna Norberg</a>, <a href="">Madelene Mure</a> and <a href="https://www.hyperisland.com/community/people/el-allouche-safaa" target="_blank">Safaa El Allouche</a></p>
+				<p id="copy">&copy; 2015. All Rights Reserved</p>
+			</footer>
+		</div>
+	</body>
+</html>
