@@ -168,10 +168,6 @@ span:last-child {
 	float: left;
 }
 
-.graph-button:hover {
-	background: #F76D63;
-}
-
 .graph-description {
 	width: 750px;
 	height: 50px;
